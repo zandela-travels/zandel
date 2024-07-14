@@ -1,0 +1,83 @@
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+
+.sdes{
+    text-align: center;
+    color: var(--main-color);
+    margin: 10px;
+    font-size: 18px;
+}
+
+#sidebarform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        height: 55px;
+        width: 250px;
+        margin: 10px;
+        background: transparent;
+        backdrop-filter: bur(10px);
+    }
+}
+
+#sidebarform, .chk{
+    color: rgb(0, 234, 255);
+    margin: .5rem;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#sidebarform, select{
+    margin: 1rem;
+    align-items: center;
+}
+
+option{
+   background-color: #6893ee;
+   text-decoration: none;
+   border: none;
+}
+
+.filterbox{
+    background-color: transparent;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+input[type=checkbox]{
+    transform: translate(100%, 15%);
+}
+
+.fhead{
+    text-align: center;
+    color: gold;
+    margin-top: 1.2rem;
+}
+
+#fbtn{
+    background-color: transparent;
+    border: none;
+    transform: translateX(47%);
+}
+.addfilter{
+    margin: 1rem;
+}
+
+@media  ( width <= 1100px){
+    
+    input[type=checkbox]{
+        transform: translate(150%, 20%);
+    }
+
+}
+

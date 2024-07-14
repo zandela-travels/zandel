@@ -1,0 +1,54 @@
+@import url('../../User\ Interface/UI.css');
+
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+.view{
+    text-decoration: none;
+}
+
+.popup1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--back-color);
+        position: absolute;
+        left: 20%;
+        max-height: 500px;
+        max-width: 700px;
+        max-height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        border: 3px solid gold;
+        border-radius: 20px;
+        z-index: 9999;
+        textarea{
+            margin-left: 0;
+        }
+        form{
+            margin: 0;
+            border: none;
+        }
+        input, textarea, select, p{
+            color: var(--main-color);
+        }
+        #tab{
+            margin: 0;
+        }
+        .user-records{
+            color: var(--main-color);
+        }
+        label{
+            color: var(--main-color);
+        }
+}
+
+.close-popup1{
+    display: none;
+}

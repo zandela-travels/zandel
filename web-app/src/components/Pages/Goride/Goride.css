@@ -1,0 +1,261 @@
+
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: #cf10cf;
+    --text-color: black;
+    --back-color: #444;
+}
+
+#cont4{
+    height: 91.9vh;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+#maincont{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.sidebar1{
+    height: 100vh;
+    width: 350px;
+    background-image: url('../../Images/footer_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-right: 3px solid var(--topic-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vehpage{
+    display: none;
+}
+
+.vehtabs{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn{
+        margin: 1rem;
+        font-size: 18px;
+    }
+}
+
+.statement{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.active_vehpage{
+    border-top: 5px solid rgb(0, 234, 255);
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar2{
+    height: 100vh;
+    width: 350px;
+    background-image: url('../../Images/footer_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-right: 3px solid var(--topic-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#smlcont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+#smlcont img{
+    width: 300px;
+    height: 80px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.side-menu{
+    display: none;
+}
+
+.active_side-menu{
+    display: block;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    z-index: 9999;
+}
+
+.side-menu button{
+    display: none;
+    outline: none;
+    color: var(--sub-topic);
+    font-size: 30px;
+    padding: 2px;
+    background-color: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#vehiclecont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+@media  ( 900px <= width <= 1100px){
+    
+    .side-menu button{
+        display: block;
+    }
+
+    .statement{
+        font-size: 23px;
+    }
+
+    .sidebar2_open{
+        display: block;
+    }
+
+    .sidebar1{
+        display: none;
+    }
+
+    .vehtabs{
+        .btn{
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media  ( 600px <= width <= 900px){
+
+    .side-menu button{
+        display: block;
+    }
+
+    .statement{
+        font-size: 20px;
+    }
+
+    .sidebar1{
+        display: none;
+    }
+
+    #smlcont img{
+        height: 75px;
+        width: 280px;
+    }
+    .sidebar2_open{
+        display: block;
+    }
+
+    .vehtabs{
+        .btn{
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media  ( width <= 600px){
+    
+    .sidebar1{
+        display: none;
+    }
+
+    .statement{
+        font-size: 18px;
+    }
+
+    .side-menu button{
+        display: block;
+    }
+
+    #smlcont img{
+        height: 70px;
+        width: 250px;
+    }
+
+    .sidebar2_open{
+        display: block;
+    }
+
+    .vehtabs{
+        .btn{
+            font-size: 15px;
+        }
+    }
+
+}
+
+@media  ( width <= 480px){
+    
+    .sidebar1{
+        display: none;
+    }
+
+    .statement{
+        font-size: 15px;
+    }
+
+    .sidebar2{
+        select{
+            font-size: 12px;
+        }
+        checkbox{
+            font-size: 12px;
+        }
+        label{
+            font-size: 13px;
+        }
+    }
+
+    .side-menu button{
+        display: block;
+    }
+
+    #smlcont img{
+        height: 60px;
+        width: 200px;
+    }
+
+    .sidebar2_open{
+        display: block;
+    }
+
+    .vehtabs{
+        .btn{
+            font-size: 10px;
+            margin: 0.5rem;
+        }
+    }
+
+}

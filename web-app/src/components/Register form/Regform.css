@@ -1,0 +1,155 @@
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+
+.error{
+    margin-left: 1rem;
+    color: red;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+form{
+    border: 2px solid var(--sub-topic);
+    margin: 2rem;
+    border-radius: 10px;
+    .f-label{
+        color: var(--topic-color);
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+form p{
+    margin-left: 0.6rem;
+}
+
+#tab{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    border: 2px solid var(--topic-color);
+    border-radius: 10px;
+}
+
+legend{
+    color: var(--sub-topic);
+}
+
+#tab input, select, label, legend{
+    margin: 0.5rem;
+}
+
+
+.btnForm2{
+    margin: 1rem;
+    background-color: var(--topic-color);
+    border: 1px solid var(--back-color);
+    border-radius: 10px;
+    width: 200px;
+    padding: 3px;
+    color: var(--main-color);
+}
+
+#toggleBtn, #toggleBtn1{
+    color: var(--main-color);
+    background-color: var(--topic-color);
+    border: 2px solid var(--back-color);
+    border-radius: 5px;
+    margin-top: .5rem;
+    font-size: 13px;
+    padding: 2px;
+    width: 100px;
+}
+
+
+.value label{
+    margin-left: 0;
+}
+
+#Type-of-vehicle, #location{
+    margin: 0.6rem;
+}
+
+.submitbtn{
+    background-color: var(--topic-color);
+    margin: 2rem;
+    border: 1px solid var(--back-color);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--main-color);
+}
+
+.submitbtn:hover, .btnForm2:hover{
+    background-color: var(--sub-topic);
+}
+
+
+
+.btnForm2rem{
+    background-color: red;
+    color: var(--main-color);
+    border: none;
+    padding: 5px;
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+@media  ( width <= 1100px){
+    
+    form{
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media  ( width <= 600px){
+    
+    #tab{
+        margin: 0;
+        border: none;
+    }
+
+}
+
+@media  ( width <= 480px){
+    
+    #tab{
+        margin: 0;
+        border: none;
+    }
+
+    #tab legend{
+        font-size: 15px;
+    }
+
+    .error{
+        font-size: 10px;
+        margin-right: 1rem;
+    }
+
+    #tab label{
+        font-size: 13px;
+    }
+
+    #tab {
+        input{
+            font-size: 11px;
+        }
+
+        select{
+            font-size: 13px;
+        }
+    }
+
+}
+

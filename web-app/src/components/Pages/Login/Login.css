@@ -1,0 +1,144 @@
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+.form-element{
+    background-image: url('../../Images/bg\ img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.legend{
+    color: gold;
+    text-align: center;
+    margin: 1rem;
+}
+
+.loginform{
+    width: 400px;
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px solid var(--topic-color);
+    border-radius: 20px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabz{
+    margin: 1rem;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.active-tab{
+    border: 2px solid gold;
+}
+
+.content{
+    display: none;
+}
+
+.active-content{
+    display: contents;
+}
+
+.labelcap{
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+    width: fit-content;
+    color: var(--main-color);
+}
+
+.loginerrors{
+    margin-top: 0.3rem;
+    color: red;
+    display: block;
+}
+
+.input-box{
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    height: 50px;
+    padding: 10px;
+    color: var(--main-color);
+    outline: none;
+}
+
+.loginbtn{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    color: var(--main-color);
+    background-color: var(--topic-color);
+    margin: 1rem;
+}
+
+.loginbtn:hover{
+    border: 2px solid var(--main-color);
+    color: gold;
+}
+
+.reglink:hover{
+    text-decoration: underline;
+}
+
+.link, .reglink{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+@media  ( width <= 480px){
+    
+    .loginform{
+        width: 90vw;
+
+        .active-content{
+            font-size: 14px;
+        }
+
+        .tabs-container{
+            font-size: 14px;
+        }
+
+        .link{
+            font-size: 12px;
+        }
+
+        .loginbtn{
+            width: 160px;
+            align-self: center;
+        }
+
+        .input-box{
+            height: 30px;
+        }
+    }
+
+}

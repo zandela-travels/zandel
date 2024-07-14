@@ -1,0 +1,1601 @@
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+.cont8{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;   
+}
+
+#orgicontp{
+    background-image: url('../Images/footer_backs.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 80%;
+}
+
+.sideText{
+    color: gold;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.side-logo{
+    margin-top: 2rem;
+    margin-left: 0;
+    max-width: 100%;
+    height: 60px;
+    margin-bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.username{
+    color: var(--main-color);
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.side-tabs{
+    text-align: left;
+    margin-left: 2.2rem;
+    font-size: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 3px;
+}
+
+.bx{
+    padding-right: .5rem;
+}
+
+.preview-tab{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;   
+}
+
+.ui-tabs{
+    display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.active-ui-tabs{
+    display: contents;
+}
+
+.active-side-tabs, .side-tabs:hover{
+    color: var(--topic-color);
+    background-color: #2323;
+    border-right: 4px solid var(--sub-topic);
+}
+
+.stat-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-card{
+    background-color: rgb(45, 145, 216);
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: fit-content;
+    margin: .3rem;
+    .c-head{
+        font-size: 25px;
+        margin: .5rem;
+        color: var(--main-color);
+    }
+    .c-value{
+        font-size: 40px;
+        margin-left: 1rem;
+        color: gold;
+    }
+}
+.s-card:hover{
+    background-color: rgb(118, 165, 239);
+    transition: .1s ease-in;
+}
+
+.stat-table{
+    margin: 1rem;
+}
+
+.p-form{
+    display: flex;
+    flex-direction: column;
+    label{
+        color: gold;
+        margin-left: 0;
+    }
+    input{
+        background-color: transparent;
+        outline: none;
+        border-radius: 5px;
+        color: var(--main-color);
+        border: 1px solid #68e7ee;
+    }
+    button{
+        margin-top: 1rem;
+    }
+}
+
+.payment-form{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    background-color: var(--back-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bank-details{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: var(--main-color);
+        font-size: 20px;
+    }
+}
+
+.profile-tab{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-head{
+    margin-left: 2rem;
+    font-size: 33px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--back-color);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 3px;
+    border-left: 3px solid var(--sub-topic);
+}
+
+.page-des{
+    margin-left: 2rem;
+    margin-bottom: 0;
+    font-size: 20px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    width: fit-content;
+    padding: 1px;
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.vhdescriptionP{
+    background-image: url('../Images/footer_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    border: 3px solid #68e7ee;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vhdetails1p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--topic-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--main-color);
+}
+
+.labelp{
+    margin-left: 1rem;
+    margin-bottom: .2rem;
+    margin-top: 0.5rem;
+}
+
+.alterbtn{
+    margin: 2rem;
+    padding: 3px;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    width: 80px;
+    border-radius: 10px;
+}
+
+.editbutton{
+    margin: 1rem;
+    padding: 3px;
+    background-color: transparent;
+    border: 3px solid var(--topic-color);
+    color: var(--topic-color);
+    width: 80px;
+    border-radius: 10px;
+}
+
+.editbutton:hover{
+    border: 3px solid var(--sub-topic);
+    color: var(--sub-topic);
+}
+
+.alterbtn:hover{
+    border: 2px solid gold;
+}
+
+.dp{
+    height: 110px;
+    width: 110px;
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+h1{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+}
+
+h5{
+    margin: 1rem;
+    color: gold;
+    font-size: 22px;
+}
+
+.Driver-d{
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.entry-control{
+    background-image: url('../Images/backdm2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.CompanyCrud{
+    width: 95%;
+    margin-left : 2rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    .table-responsive .table{
+        overflow: hidden;
+        overflow-y: scroll;
+        scrollbar-width: 2px;
+    }
+}
+
+.popup{
+    background-image: url('../Images/footer_backs.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border: 3px solid gold;
+    border-radius: 20px;
+    textarea{
+        margin-left: 0;
+    }
+}
+
+#addForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: .5rem;
+    padding: 10px;
+    label{
+        color: var(--main-color);
+    }
+}
+
+#addForm select, #addForm input, #addForm textarea{
+    color: gold;
+}
+
+#addForm .labelp{
+    color: var(--main-color);
+}
+
+.xbtn{
+   margin-top: 1rem;
+   margin-left: 1rem;
+   color: var(--main-color);
+}
+
+
+.close-popup{
+    display: none;
+}
+
+.fillup{
+    width: 80%;
+    height: fit-content;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.fillup input, .fillup textarea, .fillup select{
+    background: transparent;
+    outline: none;
+    border: 2px solid #68e7ee;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+textarea, select{
+    margin: .6rem;
+}
+
+.user-table{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid #68e7ee;
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.table-head{
+    background-color: var(--topic-color);
+    color: var(--main-color);
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.user-feilds{
+    color: var(--sub-topic);
+    padding: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid var(--back-color);
+    border-right: 2px solid #68e7ee;
+}
+
+.user-records{
+    padding: 10px;
+    border-bottom: 1px solid var(--back-color);
+    color: var(--back-color);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-card{
+    background-color: var(--back-color);
+    height: fit-content;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px solid gold;
+    margin: 1rem;
+}
+
+.image-card img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+.card-txt{
+    color: var(--main-color);
+    margin: .5rem;
+    text-align: center;
+}
+
+.Preview-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.card-top{
+    color: var(--sub-topic);
+}
+
+.active_sidepanel{
+    display: block;
+}
+
+.side-panel{
+    display: none;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    z-index: 2000;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    
+}
+
+.side-panel button{
+    display: none;
+    align-self: center;
+    background-color: var(--back-color);
+    font-size: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--main-color);
+    outline: none;
+    border: none;
+    padding: 3px;
+}
+
+.active_side-panel{
+    display: block;
+}
+
+.sidepanel{
+    background-image: url('../Images/footer_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 300px;
+    position: relative;
+}
+
+.notauth{
+    h1{
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: .5rem;
+        font-size: 46px;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.sidepanel1{
+    display: none;
+    background-image: url('../Images/footer_backs.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    align-self: center;
+    margin: 0;
+    width: 232px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 3px solid gold;
+    border-right: 3px solid gold;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    z-index: 1000;
+}
+
+.active_sidepanel1{
+    display: block;
+}
+
+@media (1000px <= width <= 1250px){
+
+    .sidepanel1{
+        display: none;
+    }
+
+    .page-head{
+        font-size: 33px;
+    }
+
+    .page-des{
+        font-size: 17px;
+    }
+
+    #vhdetails1p{
+        width: inherit;
+        margin: 1rem;
+    }
+
+    .carousel{
+        width: 60vw;
+        align-self: center;
+        margin: 0;
+    }
+
+    .companyimg .carousel{
+        height: 500px;
+        width: 80vw;
+    }
+
+    .companyimg img{
+        height: 500px;
+        width: 78vw;
+    }
+
+    .carousel{
+        height: 500px;
+        width: 90vw;
+    }
+
+    .companydes{
+        font-size: 18px;
+    }
+
+    .popup{
+        margin-left: 20vw;
+        width: 60vw;
+    }
+
+    .vhslider img{
+        width: 600px;
+        height: 450px;
+    }
+
+    .vhslider  .carousel{
+        width: 600px;
+        max-height: 450px;
+    }
+
+
+}
+
+@media  ( width <= 1000px){
+    
+    .side-panel{
+        height: 65%;
+        button{
+            background-color: var(--back-color);
+            color: gold;
+        }
+    }
+
+    .sidepanel{
+        display: none;
+    }
+
+    .side-panel button{
+        display: block;
+    }
+
+    .active-side-tabs, .side-tabs:hover{
+        border: none;
+    }
+
+    .page-head{
+        font-size: 33px;
+    }
+
+    .page-des{
+        font-size: 17px;
+    }
+
+    #vhcont{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #Ddetails1{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    #vhdetails1p{
+        width: inherit;
+    }
+
+    #legend{
+        font-size: 20px;
+    }
+
+    #Dimg{
+        height: 120px;
+        width: 120px;
+    }
+
+    .vhimage1 img{
+        max-width: 630px;
+        max-height: 320px;
+    }
+
+    .carousel{
+        height: 320px;
+        width: 630px;
+    }
+
+    .user-table{
+        font-size: 15px;
+
+        th{
+            font-size: 17px;
+        }
+
+        .user-feilds{
+            font-size: 16px;
+        }
+    }
+
+    .cards{
+        width: 90vw;
+    }
+
+    .image-card{
+        width: 250px;
+        height: 190px;
+        font-size: 13px;
+
+        img{
+            height: 150px;
+        }
+    }
+        .companyimg{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .companyimg .carousel{
+            height: 450px;
+            width: 90vw;
+            margin: 0;
+        }
+    
+        .companyimg img{
+            height: 450px;
+            width: 90vw;
+        }
+    
+        .companydes{
+            font-size: 18px;
+        }
+    
+        .backc{
+            width: 600px;
+        }
+
+        .companyimg{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .popup{
+            margin-left: 18vw;
+            width: 60vw;
+
+            label, input, textarea, select{
+                font-size: 15.5px;
+            }
+        }
+
+        .vhslider img{
+            width: 470px;
+            height: 250px;
+        }
+    
+        .vhslider  .carousel{
+            width: 470px;
+            max-height: 250px;
+        }
+
+    }
+
+
+@media  ( 600px <= width <= 900px){
+
+    .side-panel{
+        height: 45%;
+        button{
+            background: var(--back-color);
+            color: gold;
+        }
+    }
+    
+    .preview-tab{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-head{
+        font-size: 27px;
+    }
+
+    .page-des{
+        font-size: 17px;
+    }
+
+    #vhcont{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .Ddescription{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 95vw;
+        margin-bottom: .5rem;
+    }
+
+    .contact{
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+    }
+
+    #Ddetails1{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .vhdescriptionP{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    #vhdetails1p{
+        width: inherit;
+    }
+
+    #legend{
+        font-size: 20px;
+    }
+
+    #Dimg{
+        height: 120px;
+        width: 120px;
+    }
+
+    .vhimage1 img{
+        max-width: 630px;
+        max-height: 320px;
+    }
+
+    .carousel{
+        height: 320px;
+        width: 630px;
+    }
+
+    .user-table{
+        font-size: 15px;
+
+        th{
+            font-size: 17px;
+        }
+
+        .user-feilds{
+            font-size: 16px;
+        }
+    }
+
+    .cards{
+        width: 90vw;
+    }
+
+    .image-card{
+        width: 250px;
+        height: 190px;
+        font-size: 13px;
+
+        img{
+            height: 150px;
+        }
+    }
+
+    .companyimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .companyimg .carousel{
+        height: 350px;
+        width: 93vw;
+    }
+
+    .companyimg img{
+        height: 300px;
+        width: 90vw;
+    }
+
+    .backc{
+        width: 550px;
+    }
+
+    .card{
+        height: 250px;
+    }
+
+    .cardimg{
+        height: 190px;
+        margin: 0;
+    }
+
+    .cardimg img{
+        height: 170px;
+    }
+
+    .companydes, .contactcomp{
+        font-size: 16px;
+    }
+
+    .dname{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .vehiclecard{
+        height: fit-content;
+
+        img{
+            height: 190px;
+        }
+    
+        .list-group-item{
+            font-size: 16px;
+        }
+
+        .ctitle{
+            font-size: 19px;
+        }
+
+        .btn{
+            font-size: 15px;
+        }
+    }
+
+    .subhead, .sp{
+        font-size: 22px;
+    }
+
+    .vhslider img{
+            width: 470px;
+            height: 250px;
+    }
+    
+    .vhslider  .carousel{
+            width: 470px;
+            max-height: 250px;
+    }
+
+    .popup{
+        margin-left: 15vw;
+        width: 65vw;
+
+        label, input, textarea, select{
+            font-size: 13px;
+            margin-bottom: .3rem;
+        }
+
+        legend{
+            font-size: 17px;
+        }
+
+    }
+
+    .payment-form{
+        display: flex;
+        flex-direction: column;
+        label, button, p, input{
+            font-size: 17px;
+        }
+    }
+    .notauth{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+
+}
+
+@media  ( width <= 600px){
+
+    .side-panel{
+        height: 60%;
+        button{
+            background-color: var(--back-color);
+            color: gold;
+        }
+    }
+    
+    .preview-tab{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-head{
+        font-size: 25px;
+    }
+
+    .page-des{
+        font-size: 16px;
+    }
+
+    #vhcont{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .Ddescription{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 95vw;
+        margin-bottom: .5rem;
+    }
+
+    #Ddetails1{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    #Ddetails1 p{
+        font-size: 16px;
+    }
+
+    #vhdetails1 p{
+        font-size: 16px;
+    }
+
+    .vhdescriptionP{
+        width: 95vw;
+        height: 700px;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    #legend{
+        font-size: 20px;
+    }
+
+    #Dimg{
+        height: 120px;
+        width: 120px;
+    }
+
+    .vhimage1 img{
+        max-width: 500px;
+        max-height: 250px;
+    }
+
+    .carousel{
+        height: 250px;
+        width: 500px;
+    }
+
+    .user-table{
+        font-size: 15px;
+
+        th{
+            font-size: 17px;
+        }
+
+        .user-feilds{
+            font-size: 16px;
+        }
+    }
+
+    .cards{
+        width: 90vw;
+    }
+
+    .image-card{
+        width: 250px;
+        height: 190px;
+        font-size: 13px;
+
+        img{
+            height: 150px;
+        }
+    }
+
+    .companyimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .companyimg .carousel{
+        height: 250px;
+        width: 93vw;
+    }
+
+    .companyimg img{
+        height: 250px;
+        width: 90vw;
+    }
+
+    .backc{
+        width: 380px;
+        height: 250px;
+    }
+
+    .card{
+        height: 200px;
+    }
+
+    .cardimg{
+        height: 150px;
+        margin: 0;
+    }
+
+    .cardimg img{
+        height: 140px;
+    }
+
+    .dname{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .companydes, .contactcomp{
+        font-size: 17px;
+    }
+
+    .vehiclecard{
+        height: fit-content;
+
+        img{
+            height: 170px;
+        }
+    
+        .list-group-item{
+            font-size: 15px;
+        }
+
+        .ctitle{
+            font-size: 18px;
+        }
+
+        .btn{
+            font-size: 14px;
+        }
+    }
+
+    .subhead, .sp{
+        font-size: 20px;
+    }
+
+    .CompanyCrud{
+        font-size: 14px;
+        margin: 0;
+
+        .btn{
+            font-size: 14px;
+            margin-top: 1rem;
+        }
+    }
+
+    .sidepanel1{
+        font-size: 15px;
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .vhslider{
+        width: 90vw;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 200px;
+        left: 5%;
+    }
+
+    .vhslider img{
+            width: 75vw;
+            height: 40vw;
+            margin-top: 0;
+    }
+    
+    .vhslider  .carousel{
+            width: 80vw;
+            max-height: 250px;
+    }
+
+    .popup{
+        margin-left: 10vw;
+        width: 80vw;
+
+        label, input, textarea, select{
+            font-size: 13px;
+            margin-bottom: .3rem;
+        }
+
+        legend{
+            font-size: 17px;
+        }
+
+    }
+
+    .payment-form{
+        display: flex;
+        flex-direction: column;
+        label, button, p, input{
+            font-size: 15px;
+        }
+    }
+    .notauth{
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media  ( width <= 480px){
+
+    .side-panel{
+        height: 60%;
+        button{
+            background-color: var(--back-color);
+            color: gold;
+        }
+    }
+    
+    .preview-tab{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-head{
+        font-size: 22px;
+    }
+
+    .page-des{
+        font-size: 15px;
+    }
+
+    #vhcont{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .Ddescription{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 95vw;
+        margin-bottom: .5rem;
+    }
+
+    #Ddetails1{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .vhdescriptionP{
+        width: 95vw;
+        height: 700px;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-size: 13px;
+    }
+
+    #legend{
+        font-size: 20px;
+    }
+
+    #Dimg{
+        height: 100px;
+        width: 100px;
+    }
+
+    .vhimage1 img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .carousel{
+        height: 200px;
+        width: 320px;
+    }
+
+    .user-table{
+        font-size: 13px;
+
+        th{
+            font-size: 15px;
+        }
+
+        .user-feilds{
+            font-size: 14px;
+        }
+    }
+
+    .cards{
+        width: 90vw;
+    }
+
+    .image-card{
+        width: 250px;
+        height: 190px;
+        font-size: 13px;
+
+        img{
+            height: 150px;
+        }
+    }
+
+    .companyimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .companyimg .carousel{
+        height: 230px;
+        width: 93vw;
+    }
+
+    .companyimg img{
+        height: 200px;
+        width: 90vw;
+    }
+
+    .backc{
+        width: 240px;
+    }
+
+    .card{
+        height: 170px;
+    }
+
+    .cardimg{
+        height: 130px;
+    }
+
+    .cardimg img{
+        height: 130px;
+    }
+
+    .companydes, .contactcomp{
+        font-size: 14px;
+    }
+
+    .dname{
+        font-size: 14px;
+        margin-top: .5rem;
+    }
+
+    .vehiclecard{
+        height: fit-content;
+
+        img{
+            height: 170px;
+        }
+    
+        .list-group-item{
+            font-size: 14px;
+        }
+
+        .ctitle{
+            font-size: 17px;
+        }
+
+        .btn{
+            font-size: 13px;
+        }
+    }
+
+    .subhead, .sp{
+        font-size: 18px;
+    }
+
+    .vhslider{
+        width: 90vw;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 200px;
+        left: 5%;
+    }
+
+    .vhslider img{
+            width: 75vw;
+            height: 200px;
+            margin-top: 0;
+    }
+    
+    .vhslider  .carousel{
+            width: 80vw;
+            max-height: 250px;
+    }
+
+    .CompanyCrud{
+        font-size: 12px;
+        margin: 0;
+
+        .btn{
+            font-size: 12px;
+            margin-top: 1rem;
+        }
+    }
+
+    .sidepanel1{
+        font-size: 14px;
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .popup{
+        margin-left: 7vw;
+        width: 85vw;
+
+        label{
+            font-size: 13px;
+            margin-bottom: .3rem;
+        }
+
+        legend{
+            font-size: 17px;
+        }
+
+    }
+    .notauth{
+        h1{
+            font-size: 17px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media ( width <= 410px) {
+
+    .side-panel{
+        height: 60%;
+        button{
+            background-color: var(--back-color);
+            color: gold;
+        }
+    }
+
+    .vhdescriptionP{
+        display: flex;
+        flex-direction: column;
+    }
+    .companyimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .companyimg .carousel{
+        height: 230px;
+        width: 100vw;
+    }
+
+    .companyimg img{
+        height: 200px;
+        width: 90vw;
+    }
+
+    .backc{
+        width: 200px;
+    }
+
+    .card{
+        height: 175px;
+    }
+
+    .cardimg{
+        height: 130px;
+    }
+
+    .cardimg img{
+        height: 120px;
+    }
+
+    .companydes, .contactcomp{
+        font-size: 13px;
+    }
+
+    .dname{
+        font-size: 13px;
+    }
+
+    .vehiclecard{
+        height: fit-content;
+
+        img{
+            height: 150px;
+        }
+    
+        .list-group-item{
+            font-size: 12px;
+        }
+
+        .ctitle{
+            font-size: 15px;
+        }
+
+        .btn{
+            font-size: 10px;
+        }
+    }
+
+    .subhead, .sp{
+        font-size: 18px;
+    }
+
+    .vhslider{
+        width: 90vw;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 120px;
+        left: 93%;
+    }
+
+    .vhslider img{
+            width: 75vw;
+            height: 200px;
+    }
+    
+    .vhslider  .carousel{
+            width: 80vw;
+            max-height: 250px;
+    }
+
+    .CompanyCrud, .stat-table{
+        font-size: 10px;
+        margin-top: .2rem;
+
+        .btn{
+            font-size: 10px;
+            margin-top: 1rem;
+        }
+    }
+
+    .payment-form{
+        display: flex;
+        flex-direction: column;
+        label, button, p, input{
+            font-size: 13px;
+        }
+    }
+
+    .s-card{
+        .c-head{
+            font-size: 19px;
+        }
+        .c-value{
+            font-size: 17px;
+        }
+        .c-date{
+            font-size: 12px;
+        }
+    }
+
+    .sidepanel1{
+        font-size: 13px;
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .popup{
+        margin-left: 1vw;
+        width: 95vw;
+
+        label, input, textarea, select{
+            font-size: 13px;
+            margin-bottom: .3rem;
+        }
+
+        legend{
+            font-size: 17px;
+        }
+
+    }
+
+    .notauth{
+        h1{
+            font-size: 16px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+}

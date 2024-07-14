@@ -1,0 +1,227 @@
+:root{
+    --main-color: white;
+    --topic-color: #6893ee;
+    --sub-topic: rgb(207,16,207);
+    --text-color: black;
+    --back-color: #444;
+}
+
+
+#registerform{
+    background-image: url('../../Images/footer_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fomtabs{
+    border-bottom: 2px solid var(--topic-color);
+    margin: 2rem;
+}
+
+
+#regform{
+    background-color: var(--main-color);
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+#tabbutton, #tabbutton1{
+    margin-left: 2rem;
+    padding: 5px;
+    background-color: #888;
+    color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+}
+
+#tabcont{
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction{
+    border: 3px solid var(--sub-topic);
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: var(--back-color);
+    color: var(--main-color);
+}
+
+ul li{
+    margin: 1rem;
+}
+
+.H2{
+    text-align: center;
+    color: var(--topic-color);
+}
+
+
+#caption{
+   color: var(--main-color);
+   text-align: center;
+   padding: 20px;
+   background-color: transparent;
+   backdrop-filter: blur(10px);
+   text-decoration: underline var(--sub-topic);
+   margin: 0;
+}
+
+.log-link{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 20px;
+    z-index: 1000;
+    padding: 3px;
+}
+
+.log-link a{
+    text-decoration: none;
+    color: gold;
+    border: 2px solid gold;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.log-link a:hover{
+    color: var(--text-color);
+    background-color: gold;
+    padding: 3px;
+}
+
+.warning{
+    color: red;
+}
+
+@media  ( width <= 1100px){
+    
+    #regform{
+        width: 95vw;
+    }
+
+    .instruction ul li{
+        font-size: 15px;
+    }
+
+    .instruction h2{
+        font-size: 25px;
+    }
+
+}
+
+@media  ( 600px <= width <= 900px){
+    
+    .instruction ul li{
+        font-size: 14px;
+    }
+
+    .instruction h2{
+        font-size: 23px;
+    }
+
+    .log-link{
+        font-size: 20px;
+    }
+
+    .log-link a{
+        font-size: 20px;
+    }
+
+    #caption{
+        font-size: 29px;
+    }
+
+}
+
+@media  ( width <= 600px){
+    
+    .instruction ul li{
+        font-size: 13px;
+    }
+
+    .instruction h2{
+        font-size: 19px;
+    }
+
+    .log-link{
+        font-size: 21px;
+    }
+
+    .log-link a{
+        font-size: 19px;
+    }
+
+    #caption{
+        font-size: 26px;
+    }
+
+
+}
+
+@media  ( 410px <= width <= 480px){
+    
+    .instruction ul li{
+        font-size: 12px;
+    }
+
+    .instruction h2{
+        font-size: 18px;
+    }
+
+    .log-link{
+        font-size: 19px;
+    }
+
+    .log-link a{
+        font-size: 17px;
+    }
+
+    #caption{
+        font-size: 24px;
+    }
+
+
+}
+
+@media  ( width <= 410px){
+    
+    .instruction ul li{
+        font-size: 11px;
+        margin: 0.3rem;
+    }
+
+    .instruction h2{
+        font-size: 18px;
+    }
+
+    .log-link{
+        font-size: 17px;
+    }
+
+    .log-link a{
+        font-size: 15px;
+    }
+
+    #caption{
+        font-size: 23px;
+    }
+
+    #tabbutton, #tabbutton1{
+        font-size: 15px;
+    }
+
+}
